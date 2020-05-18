@@ -1,6 +1,5 @@
 /*
 https://www.youtube.com/watch?v=6FOq4cUdH8k&t=196s
-35:21
  */
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
