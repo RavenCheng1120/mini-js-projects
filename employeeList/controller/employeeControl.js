@@ -24,23 +24,26 @@ router.get("/list", (req,res) => {
 
 // 按下submit按鈕，傳出POST
 router.post('/', (req, res) => {
-    insertRecord(req, res);
+    if(req.body._id == "")  // 新增員工
+        insertRecord(req, res);
+    else // 更改員工資料
+        updateRecord(req, res);
 });
 
 // 將資料存入DB物件中
 const insertRecord = (req, res) => {
     let employee = new Employee();
-    employee.fullName = req.body.fullName;
-    employee.email = req.body.email;
-    employee.city = req.body.city;
-    employee.phoneNumber = req.body.phoneNumber;
+    employee.fullName = req.body.fullName.trim();
+    employee.email = req.body.email.trim();
+    employee.city = req.body.city.trim();
+    employee.phoneNumber = req.body.phoneNumber.trim();
     employee.save((err, doc) => {
         if(err){
             // console.log(err);
             if(err.name == 'ValidationError'){
                 handleValidationError(err, req.body);
                 res.render("employee/addOrEdit", {
-                    viewTitle: "Insert Employee",
+                    viewTitle: "新增員工資料",
                     employee: req.body  // 用來列印錯誤訊息
                 });
             }
@@ -48,6 +51,23 @@ const insertRecord = (req, res) => {
         else{
             res.redirect('employee/list'); // 成功存入資料庫，導回主頁面
         }
+    });
+};
+
+const updateRecord = (req, res) => {
+    Employee.findOneAndUpdate({ _id : req.body._id }, req.body, {new: true}, (err, doc) => {
+        if(err){
+            console.log(err);
+            if(err.name == 'ValidationError'){
+                handleValidationError(err, req.body);
+                res.render("employee/addOrEdit", {
+                    viewTitle: "新增員工資料",
+                    employee: req.body  // 用來列印錯誤訊息
+                });
+            }
+        } 
+        else
+            res.redirect('/employee/list');
     });
 };
 
@@ -66,5 +86,27 @@ const handleValidationError = (err, body) => {
         }
     }
 };
+
+// 更改員工資料，透過傳回的id找到資料庫中相對應的員工
+router.get('/:id', (req, res) => {
+    Employee.findById(req.params.id, (err, doc) => {
+        if(err) console.log(err);
+        else{
+            res.render("employee/addOrEdit", {
+                viewTitle: "更改資料",
+                employee: doc.toJSON()  // 用來傳遞原先的資料
+            });
+        }
+    });
+});
+
+router.get('/delete/:id', (req, res) => {
+    Employee.findByIdAndRemove(req.params.id, (err, doc) => {
+        if(err) console.log(err);
+        else{
+            res.redirect('/employee/list');
+        }
+    });
+});
 
 module.exports = router;

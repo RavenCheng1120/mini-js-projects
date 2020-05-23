@@ -4,6 +4,7 @@
 
 
 <form action="/employee" method="POST">
+<input type="hidden" name="_id" value="{{ employee._id }}">
     <div class="form-group">
         <label>姓名(必填)</label>
         <input type="text" name="fullName" class="form-control" placeholder="Full name" value="{{ employee.fullName }}">
