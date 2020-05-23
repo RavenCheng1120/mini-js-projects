@@ -1,0 +1,31 @@
+<div class="form-inline justify-content-between">
+    <h3>員工資料</h3>
+    <a href="/employee" class="btn btn-danger"><i class="fas fa-user-plus"></i> 新增員工</a>
+</div>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>手機號碼</th>
+            <th>電子郵件</th>
+            <th>居住城市</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each list}}
+            <tr>
+                <td>{{this.fullName}}</td>
+                <td>{{this.phoneNumber}}</td>
+                <td>{{this.email}}</td>
+                <td>{{this.city}}</td>
+                <td>
+                    <a><i class="far fa-edit"></i></a>
+                    <a><i class="far fa-trash-alt"></i></a>
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

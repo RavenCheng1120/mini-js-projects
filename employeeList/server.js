@@ -20,6 +20,7 @@ app.use('/employee', employeeControl);
 
 // 連接handlebar
 app.set('views', path.join(__dirname,"/views/"));
+// 將所有hbs檔套上layouts
 app.engine('hbs', exphbs( { extname: 'hbs', defaultLayout: 'mainLayout', layoutsDir: __dirname+'/views/layouts/'} ));
 app.set('view engine', 'hbs');
 
