@@ -15,7 +15,7 @@ function App(){
       <Episode title="Episode 3" name="Misfire">Believing that Denver executed Mónica under Berlin's orders, Moscow, Denver's father, is devastated and attempts to turn himself in but is dissuaded by his own son. In the meantime, Raquel's relationship with her new friend Salva becomes more intimate, totally oblivious to the fact that it is a pseudonym assumed by the Professor.</Episode>
 
       
-      <Character name="Silene Oliveira"/>
+      <Character />
     </div>
   );
 }

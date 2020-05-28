@@ -1,23 +1,30 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./App.css";
-import images from './img/tokio.jpg';
+import characterlist from './characterList';
 
-function chara(props){
+const characterList = ["Silene Oliveira", "Andrés de Fonollosa", "Sergio Marquina"];
+
+function Chara(props){
+    const [charaNum, setNumber] = useState(0)
+
+    const handleClick = () => {
+        setNumber(Math.floor(Math.random() * 3));
+    }
 
     return(
         <div className="chara-Section">
-            <div className="character-title">
-                <h2>Characters</h2>
-                <button>Generate</button>
+            <h2>出場角色</h2>
+            <div className="generate-btn">
+                <button onClick={handleClick}>Random</button>
             </div>
 
             <div className="character-info">
-                <img src={images} alt=""/>
-                <h3>{props.name}</h3>
+                <img src={characterlist[charaNum]} alt=""/>
+                <h3>{characterList[charaNum]}</h3>
             </div>
-            
+
         </div>
     );
 }
 
-export default chara;
+export default Chara;

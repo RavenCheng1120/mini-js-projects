@@ -40,7 +40,14 @@
   padding: 10px 20px 50px 20px;
 }
 
+.episode button {
+  padding: 5px;
+  background-color: #101d38;
+  color: #f1f3f7;
+}
+
 .chara-Section {
+  position: relative;
   background-color: #52637a;
   margin: 40px 50px 0px 50px;
   height: 500px;
@@ -52,14 +59,25 @@
 }
 
 .chara-Section h2{
-  color: #18191a;
+  color: #f1f3f7;
   text-align: center;
   padding: 20px 0;
   font-size: 35px;
 }
 
-.character-title{
-  
+.generate-btn button {
+  position: absolute;
+  left: 470px;
+  top: 26px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #101d38;
+  color: #f1f3f7;
+}
+
+.generate-btn button:hover {
+  background-color: #19355f;
 }
 
 .character-info {
@@ -76,5 +94,5 @@
 
 .chara-Section h3 {
   font-size: 26px;
-  color: #f1f3f7;
+  color: #18191a;
 }
