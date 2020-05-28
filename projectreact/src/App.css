@@ -5,6 +5,13 @@
   padding-bottom: 50px;
 }
 
+.icon {
+  width: 80px;
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
+
 .app h1{
   margin: 0 auto;
   text-align:center;
@@ -46,10 +53,26 @@
   color: #f1f3f7;
 }
 
+.nextPage {
+  padding: 5px 10px;
+  margin-top: 20px;
+  background-color: #becae4;
+  color: #121213;
+  border: 0px;
+  border-radius: 1px;
+  font-size: 18px;
+  position: absolute;
+  right: 60px;
+}
+
+.prevPage {
+  left: 60px;
+}
+
 .chara-Section {
   position: relative;
   background-color: #52637ad8;
-  margin: 40px 50px 0px 50px;
+  margin: 80px 50px 0px 50px;
   height: 500px;
   width: 600px;
   border-radius: 2px;

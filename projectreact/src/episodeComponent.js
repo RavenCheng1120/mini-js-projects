@@ -3,8 +3,9 @@ import "./App.css";
 
 function paragraph(props){
     const clickMe = () => {
-        console.log("You clicked the button, good job.");
-      }
+        const url = "https://meijutw.com/player/2285_1.html";
+        window.open(url, '_blank');
+    }
 
     return(
         <div className="episode">
