@@ -2,13 +2,19 @@ import React, {useState} from 'react';
 import "./App.css";
 import characterlist from './characterList';
 
-const characterList = ["Silene Oliveira", "Andrés de Fonollosa", "Sergio Marquina"];
+const characterList = ["Silene Oliveira", "Andrés de Fonollosa", "Sergio Marquina", "Ágata Jiménez", "Aníbal Cortés", "Raquel Murillo", "Mónica Gaztambide", "Daniel Ramos"];
+let currentNum = 0;
 
 function Chara(props){
     const [charaNum, setNumber] = useState(0)
 
     const handleClick = () => {
-        setNumber(Math.floor(Math.random() * 3));
+        let tempNum = Math.floor(Math.random() * characterList.length);
+        while(currentNum === tempNum){
+            tempNum = Math.floor(Math.random() * characterList.length);
+        }
+        currentNum = tempNum;
+        setNumber(currentNum);
     }
 
     return(
