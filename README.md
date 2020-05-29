@@ -22,8 +22,11 @@ Start learning the fundamental of node.js
 5. Project React: Money Heist Webpage  
 [ 使用javascript, react.js, css, JSX標籤語法 ]    
 網站內容介紹知名西班牙搶劫犯罪影集-紙房子，目的是練習React用法。    
+
 筆記：
 - React 是一個陳述式、高效且具有彈性的 JavaScript 函式庫，用以建立使用者介面。使用小巧而獨立的「component」來建立複雜的 UI。
 - manifest的作用：PWA 中很重要的 manifest.json，可以靠這份檔案順利在 mobile 上 Add to homescreen。   
 - 在div中增加的是className而不是class，因為是使用JSX標籤語法，寫法較接近javascript。
-- 可以使用props來傳遞資料，Component使用 state 來保持狀態。
+- 可以使用props來傳遞資料，Component使用 state 來保持狀態。  
+- 在JSX中，跳脫字元用{""}包起來。
+- 要在onclick呼叫有參數的function，要使用arrow function。

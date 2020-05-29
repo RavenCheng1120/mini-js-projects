@@ -36,11 +36,11 @@ function App(){
 
       <div className="wallpaper"></div>
 
-      { pageNumber === 1 ? <Episode title="Episode 1" name="Do as Planned">{paragraph[0]}</Episode> : <Episode title="Episode 6" name="The Hot Cold War">{paragraph[5]}</Episode> }
-      { pageNumber === 1 ? <Episode title="Episode 2" name="Lethal Negligence">{paragraph[1]}</Episode> : <Episode title="Episode 7" name="Cool Instability">{paragraph[6]}</Episode> }
-      { pageNumber === 1 ? <Episode title="Episode 3" name="Misfire">{paragraph[2]}</Episode> : <Episode title="Episode 8" name="You Asked for It">{paragraph[7]}</Episode> }
-      { pageNumber === 1 ? <Episode title="Episode 4" name="Trojan Horse">{paragraph[3]}</Episode> : <Episode title="Episode 9" name="Whoever Keeps Trying It, Gets It">{paragraph[8]}</Episode> }
-      { pageNumber === 1 ? <Episode title="Episode 5" name="Groundhog Day">{paragraph[4]}</Episode> : <Episode title="Episode 10" name="Masked No Longer">{paragraph[9]}</Episode> }
+      { pageNumber === 1 ? <Episode title="Episode 1" name="Do as Planned" number="1">{paragraph[0]}</Episode> : <Episode title="Episode 6" name="The Hot Cold War" number="6">{paragraph[5]}</Episode> }
+      { pageNumber === 1 ? <Episode title="Episode 2" name="Lethal Negligence" number="2">{paragraph[1]}</Episode> : <Episode title="Episode 7" name="Cool Instability" number="7">{paragraph[6]}</Episode> }
+      { pageNumber === 1 ? <Episode title="Episode 3" name="Misfire" number="3">{paragraph[2]}</Episode> : <Episode title="Episode 8" name="You Asked for It" number="8">{paragraph[7]}</Episode> }
+      { pageNumber === 1 ? <Episode title="Episode 4" name="Trojan Horse" number="4">{paragraph[3]}</Episode> : <Episode title="Episode 9" name="Whoever Keeps Trying It, Gets It" number="9">{paragraph[8]}</Episode> }
+      { pageNumber === 1 ? <Episode title="Episode 5" name="Groundhog Day" number="5">{paragraph[4]}</Episode> : <Episode title="Episode 10" name="Masked No Longer" number="10">{paragraph[9]}</Episode> }
       
       { pageNumber === 2 ? <button className="prevPage nextPage" onClick={turnbackPage}>Prev page{"<"}</button> : <button className="nextPage" onClick={turnPage}>Next page></button>}
 
