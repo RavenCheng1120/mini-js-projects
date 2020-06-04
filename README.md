@@ -30,3 +30,6 @@ Start learning the fundamental of node.js
 - 可以使用props來傳遞資料，Component使用 state 來保持狀態。  
 - 在JSX中，跳脫字元用{""}包起來。
 - 要在onclick呼叫有參數的function，要使用arrow function。
+![image](https://github.com/RavenCheng1120/mini-js-projects/blob/master/projectreact/src/img/demo01.png)
+![image](https://github.com/RavenCheng1120/mini-js-projects/blob/master/projectreact/src/img/demo02.png)
+![image](https://github.com/RavenCheng1120/mini-js-projects/blob/master/projectreact/src/img/demo03.png)
