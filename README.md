@@ -33,3 +33,7 @@ Start learning the fundamental of node.js
 ![image](https://github.com/RavenCheng1120/mini-js-projects/blob/master/projectreact/src/img/demo01.png)
 ![image](https://github.com/RavenCheng1120/mini-js-projects/blob/master/projectreact/src/img/demo02.png)
 ![image](https://github.com/RavenCheng1120/mini-js-projects/blob/master/projectreact/src/img/demo03.png)
+
+6. 
+參考：
+- 隱藏API KEY的方法：https://medium.com/better-programming/how-to-hide-your-api-keys-c2b952bc07e6
