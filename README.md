@@ -39,3 +39,5 @@ Start learning the fundamental of node.js
 參考：
 - 隱藏API KEY的方法：https://medium.com/better-programming/how-to-hide-your-api-keys-c2b952bc07e6
 - 遇到CORS問題，未解決
+![image](https://github.com/RavenCheng1120/mini-js-projects/blob/master/recipe_app/image/demo01.png)
+![image](https://github.com/RavenCheng1120/mini-js-projects/blob/master/recipe_app/image/demo02.png)
