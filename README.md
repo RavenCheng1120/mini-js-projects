@@ -34,6 +34,8 @@ Start learning the fundamental of node.js
 ![image](https://github.com/RavenCheng1120/mini-js-projects/blob/master/projectreact/src/img/demo02.png)
 ![image](https://github.com/RavenCheng1120/mini-js-projects/blob/master/projectreact/src/img/demo03.png)
 
-6. 
+6. React Recipe App
+使用EDAMAM食譜API
 參考：
 - 隱藏API KEY的方法：https://medium.com/better-programming/how-to-hide-your-api-keys-c2b952bc07e6
+- 遇到CORS問題，未解決
